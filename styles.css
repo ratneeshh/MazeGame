@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#maze {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 2px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.path {
+    background-color: white;
+}
+
+.wall {
+    background-color: black;
+}
+
+.active {
+    background-color: yellow;
+}
+
+#scary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#scary-img {
+    max-width: 90%;
+    max-height: 90%;
+}

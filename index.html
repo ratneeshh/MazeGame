@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="maze">
+
+        <div class="cell start" id="start" data-pos="0-0"></div>
+
+        <!-- Row 1 -->
+        <div class="cell path" data-pos="0-1"></div>
+        <div class="cell wall" data-pos="0-2"></div>
+        <div class="cell path" data-pos="0-3"></div>
+        <div class="cell end" id="end" data-pos="0-4"></div>
+        <!-- Row 2 -->
+        <div class="cell wall" data-pos="1-0"></div>
+        <div class="cell path" data-pos="1-1"></div>
+        <div class="cell path" data-pos="1-2"></div>
+        <div class="cell wall" data-pos="1-3"></div>
+        <div class="cell path" data-pos="1-4"></div>
+        <!-- Row 3 -->
+        <div class="cell path" data-pos="2-0"></div>
+        <div class="cell wall" data-pos="2-1"></div>
+        <div class="cell path" data-pos="2-2"></div>
+        <div class="cell path" data-pos="2-3"></div>
+        <div class="cell wall" data-pos="2-4"></div>
+        <!-- Row 4 -->
+        <div class="cell path" data-pos="3-0"></div>
+        <div class="cell path" data-pos="3-1"></div>
+        <div class="cell wall" data-pos="3-2"></div>
+        <div class="cell wall" data-pos="3-3"></div>
+        <div class="cell path" data-pos="3-4"></div>
+        <!-- Row 5 -->
+        <div class="cell wall" data-pos="4-0"></div>
+        <div class="cell path" data-pos="4-1"></div>
+        <div class="cell path" data-pos="4-2"></div>
+        <div class="cell wall" data-pos="4-3"></div>
+        <div class="cell path" data-pos="4-4"></div>
+    </div>
+    <div id="scary" style="display: none;">
+        <img src="ftspa2lk47t91.webp" alt="Scary Image" id="scary-img">
+        <audio id="scary-sound">
+            <source src="scream-with-echo-46585.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
